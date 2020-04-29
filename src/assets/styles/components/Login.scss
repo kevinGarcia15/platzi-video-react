@@ -1,5 +1,6 @@
+@import "../Vars.scss";
 .login {
-  background: linear-gradient(#21C08B, #AB88FF);
+  background: $main-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,8 +15,6 @@
   border-radius: 40px;
   color: white;
   padding: 60px 68px 40px;
-  min-height: 700px;
-  width: 300px;
   display: flex;
   justify-content: space-around;
   flex-direction: column; }
@@ -61,16 +60,18 @@
 
 .input {
   background-color: transparent;
-  border-left: 0px;
-  border-top: 0px;
-  border-right: 0px;
   border-bottom: 2px solid white;
-  font-size: 16px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
   font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
   margin-bottom: 20px;
-  padding: 0px 20px;
   outline: none;
-  height: 50px; }
+  padding: 0px 20px;
+ }
 
 ::placeholder {
   color: white; }
