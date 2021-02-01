@@ -1,29 +1,38 @@
+export const action = {
+  setFavorite: 'SET_FAVORRITE',
+  deleteFavorite: 'DELETE_FAVORITE',
+  loginRequest :'LOGIN_REQUEST',
+  logoutRequest: 'LOGOUT_REQUEST',
+  registerRequest:'REGISTER_REQUEST',
+  getVideoSource: 'GET_VIDEO_SOURCE'
+}
+
 export const setFavorite = payload =>({
-  type: 'SET_FAVORRITE',
+  type: action.setFavorite,
    payload,
 })
 
 export const deleteFavorite = payload=>({
-  type: 'DELETE_FAVORITE',
+  type: action.deleteFavorite,
   payload,
 })
 
 export const loginRequest = payload=>({
-  type: 'LOGIN_REQUEST',
+  type: action.loginRequest,
   payload,
 })
 
 export const logoutRequest = payload=>({
-  type: 'LOGOUT_REQUEST',
+  type: action.logoutRequest,
   payload,
 })
 
 export const registerRequest = payload=>({
-  type: 'REGISTER_REQUEST',
+  type: action.registerRequest,
   payload,
 })
 
 export const getVideoSource = payload=>({
-  type: 'GET_VIDEO_SOURCE',
+  type: action.getVideoSource,
   payload,
 })

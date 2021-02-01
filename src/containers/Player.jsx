@@ -5,6 +5,9 @@ import '../assets/styles/components/Player.scss'
 import NotFound from '../containers/NotFound'
 
 const Player = props=>{
+  /**Esta es la forma de obtener parametros que nos
+   * otorga Router
+   */
   const {id} = props.match.params
   const hasPlaying = Object.keys(props.playing).length > 0
 

@@ -9,6 +9,7 @@ import plusIcon from '../assets/static/plus-icon.png'
 import removeIcon from '../assets/static/remove-icon.png'
 
 const CarouselItem = (props)=>{
+  /**esta es una forma de traer todos los elementos de los props con destructuracion */
   const {id,cover,title,year,contentRating,duration, isList} = props
 
   const handleSetFavorite=()=>{

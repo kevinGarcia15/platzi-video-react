@@ -4,7 +4,6 @@ import Search from '../Components/Search'
 import Categories from '../Components/Categories'
 import Carousel from '../Components/Carousel'
 import CarouselItem from '../Components/CarouselItem'
-import useInitialState from '../hooks/useInitialState'
 import '../assets/styles/App.scss'
 
 const Home = ({myList, trends, originals}) =>{
@@ -47,7 +46,7 @@ const Home = ({myList, trends, originals}) =>{
   )
 }
 
-
+/**coge lo que este en state y lo mapea en props */
 const mapStateToProps = state => {
   return{
     myList: state.myList,
