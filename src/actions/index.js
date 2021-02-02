@@ -4,7 +4,8 @@ export const action = {
   loginRequest :'LOGIN_REQUEST',
   logoutRequest: 'LOGOUT_REQUEST',
   registerRequest:'REGISTER_REQUEST',
-  getVideoSource: 'GET_VIDEO_SOURCE'
+  getVideoSource: 'GET_VIDEO_SOURCE',
+  search: 'SEARCH'
 }
 
 export const setFavorite = payload =>({
@@ -34,5 +35,10 @@ export const registerRequest = payload=>({
 
 export const getVideoSource = payload=>({
   type: action.getVideoSource,
+  payload,
+})
+
+export const search = payload=>({
+  type: action.search,
   payload,
 })
